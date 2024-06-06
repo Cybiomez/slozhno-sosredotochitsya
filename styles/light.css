@@ -5,8 +5,17 @@
 */
 
 .page.theme_light {
+  --theme_background-color: #fff1f7;
+  --theme_color: #353430;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --theme_background-color: #fff1f7;
+    --theme_color: #353430;
+  }
 }
