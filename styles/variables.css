@@ -16,14 +16,13 @@
   --theme_camera-effect-color: #FF0070;
 
   /*margins*/
-  --padding: clamp(0.625rem, 0.405rem + 0.94vw, 1.25rem);
+  --margin: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
+  --intro-outro-margin: clamp(0rem, -1.193rem + 5.09vw, 1.25rem);
   
   @media (width >= 768px) {
-    --padding: 1.25rem;
+    --margin: 1.25rem;
   }
-
 
   --theme_background-image: url("../images/cover-image-dark.png");
   }
 
-  

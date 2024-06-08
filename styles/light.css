@@ -22,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
+  .page.theme_auto {
     --theme_background-color: #fff1f7;
     --theme_color: #353430;
     --theme_intro-outro-color: #FFC2E6;
