@@ -8,10 +8,106 @@
   На его основе работает скрипт. */
 }
 
+.accents-block {
+  background-color: var(--theme_color-accents);
+  color: var(--theme_color-accents-text);
+}
+
 /*HEADER START*/
 
 .header {
+  display: grid;
+  justify-items: end;
 
+  background-image: var(--theme_background-image);
+  background-size: cover;
+  background-position: center;
+  block-size: 100vh;
+  min-block-size: 687px;
+}
+
+.decorated-zone {
+  position: relative;
+  padding: 10px;
+}
+
+.decorated-zone::before {
+  content: "";
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--theme_decoration-items-color);
+  border-block-start: 1px solid var(--theme_decoration-items-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  display: block;
+  justify-self: start;
+  align-self: flex-end;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--theme_decoration-items-color);
+  border-block-end: 1px solid var(--theme_decoration-items-color);
+}
+
+.header__camera-effect {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding: inherit;
+  block-size: fit-content;
+  text-transform: uppercase;
+  color: var(--theme_decoration-items-color);
+}
+
+.header__camera-effect::before {
+  content: "rec";
+}
+
+.header__camera-effect::after {
+  content: "";
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  margin: 10px;
+  background-color: var(--theme_decoration-items-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--theme_decoration-items-color);
+}
+
+.header__theme-menu {
+
+}
+
+
+
+.header__decoration-text {
+  justify-self: start;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  color: var(--theme_color-for-intro-outro);
+  text-shadow: 4px 4px 0 var(--theme_color-for-intro-outro-shadow);
+}
+
+@media (768px <= width) {
+  .header__decoration-text {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  block-size: fit-content;
+  min-inline-size: 355px;
+  min-block-size: 71px;
 }
 
 /*HEADER END*/
@@ -19,7 +115,8 @@
 /*MAIN START*/
 
 .main {
-
+  display: grid;
+  gap: 7.5%;
 }
 
 /*MAIN END*/
