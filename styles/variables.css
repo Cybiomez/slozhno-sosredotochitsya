@@ -4,13 +4,26 @@
 */
 
 .page {
+
+  /*colors*/
   --theme_background-color: #000028;
   --theme_color: #F1B2CE;
-  --theme_color-for-intro-outro: #DB00FF;
-  --theme_color-for-intro-outro-shadow: #FF0070;
-  --theme_color-accents: #FF0070; 
-  --theme_color-accents-text: #000028;
+  --theme_intro-outro-color: #DB00FF;
+  --theme_intro-outro-shadow-color: #FF0070;
+  --theme_accents-color: #FF0070; 
+  --theme_accents-text-color: #000028;
   --theme_decoration-items-color: #FF0070;
+  --theme_camera-effect-color: #FF0070;
+
+  /*margins*/
+  --padding: clamp(0.625rem, 0.405rem + 0.94vw, 1.25rem);
+  
+  @media (width >= 768px) {
+    --padding: 1.25rem;
+  }
+
 
   --theme_background-image: url("../images/cover-image-dark.png");
   }
+
+  

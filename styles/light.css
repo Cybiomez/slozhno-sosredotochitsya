@@ -7,12 +7,13 @@
 .page.theme_light {
   --theme_background-color: #fff1f7;
   --theme_color: #353430;
-  --theme_color-for-intro-outro: #FFC2E6;
-  --theme_color-for-intro-outro-shadow: #FF8DCB;
-  --theme_color-accents: #FF8DCB; 
-  --theme_color-accents-text: #353430;
+  --theme_intro-outro-color: #FFC2E6;
+  --theme_intro-outro-shadow-color: #FF8DCB;
+  --theme_accents-color: #FF8DCB; 
+  --theme_accents-text-color: #353430;
   --theme_decoration-items-color: #353430;
-
+  --theme_camera-effect-color: transparent;
+  
   --theme_background-image: url("../images/cover-image-light.png"); 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -24,11 +25,12 @@
   .page {
     --theme_background-color: #fff1f7;
     --theme_color: #353430;
-    --theme_color-for-intro-outro: #FFC2E6;
-    --theme_color-for-intro-outro-shadow: #FF8DCB;
-    --theme_color-accents: #FF8DCB; 
-    --theme_color-accents-text: #353430;
+    --theme_intro-outro-color: #FFC2E6;
+    --theme_intro-outro-shadow-color: #FF8DCB;
+    --theme_accents-color: #FF8DCB; 
+    --theme_accents-text-color: #353430;
     --theme_decoration-items-color: #353430;
+    --theme_camera-effect-color: transparent;
   
     --theme_background-image: url("../images/cover-image-light.png"); 
   }
