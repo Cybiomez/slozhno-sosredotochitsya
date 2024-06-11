@@ -23,6 +23,7 @@
   --intro-outro-margin: clamp(0rem, -1.193rem + 5.09vw, 1.25rem);
   --body-gap: clamp(2.5rem, 1.307rem + 5.09vw, 3.75rem);
   --main-gap: clamp(3.125rem, 1.336rem + 7.63vw, 5rem);
+  --header-padding: ;
   }
 
   
