@@ -65,6 +65,24 @@
   }
 }
 
+.link-in-text {
+  text-decoration: none;
+  cursor: pointer; 
+  text-shadow: 2px 2px 0 var(--theme_intro-outro-shadow-color);
+}
+
+.link-in-text:hover {
+  outline: none;
+}
+
+.link-in-text:focus {
+  outline: none;
+}
+
+.link-in-text:focus-visible {
+  outline: none;
+}
+
 /*HEADER START*/
 
 .header {
@@ -185,13 +203,37 @@
 
 .main {
   display: grid;
-  gap: 50px;
+  gap: var(--main-gap);
 }
 
 .section {
   display: grid;
+  block-size: fit-content;
   gap: 20px;
   padding: 0 var(--margin);
+}
+
+@media (width >= 768px) {
+  .block-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .block-section .main_section-card-list {
+    grid-column: span 2;
+  }
+}
+
+@media (width >= 1024px) {
+  .inline-section {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .inline-section .main_section-card-list {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .main_section-title {
@@ -199,6 +241,7 @@
   font-size: 18px;
   line-height: 23.4px;
   color: var(--theme_decoration-items-color);
+  box-sizing: fit-content;
 }
 
 .main_section-card-list {
@@ -206,13 +249,61 @@
   gap: 20px;
 }
 
-.main_section-card {
-  display: grid;
-  gap: 10px;
+.card-text {
+  padding-block-start: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
 .main_section-card h4 {
   font-weight: 400;
+}
+
+.main_section-images-list {
+  display: grid; 
+  gap: var(--margin);
+}
+
+.main_section-images {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.image {
+  object-fit: cover;
+  block-size: fit-content;
+  text-align: center;
+  inline-size: 100%;
+}
+
+@media (width >= 768px) {
+  .main_section-images-list {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--margin);
+  }
+
+  .image {
+    block-size: 100%;
+  }
+
+  .main_section-images:has(.image.sunset) {
+    grid-column: span 2;
+  }
+
+  .main_section-images:has(.image.ice-cream) {
+    grid-row: span 2;
+  }
+
+  .main_section-images:has(.image.tape) {
+    grid-row: span 2;
+  }
+
+  .main_section-images:has(.image.street) {
+    grid-column: span 2;
+  }
 }
 
 
