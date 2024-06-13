@@ -71,21 +71,6 @@
 .link-in-text {
   text-decoration: none;
   cursor: pointer;
-}
-
-.link-in-text:hover {
-  outline: none;
-}
-
-.link-in-text:focus {
-  outline: none;
-}
-
-.link-in-text:focus-visible {
-  outline: none;
-}
-
-.link-in-text {
   display: inline-block;
   line-height: 12px;
   text-align: center;
@@ -95,6 +80,7 @@
 }
 
 .link-in-text:hover {
+  outline: none;
   border-block-end: 1px solid var(--theme_color);
 }
 
@@ -106,7 +92,6 @@
   outline: none;
   border: 1px solid var(--theme_color);
 }
-
 
 /*HEADER START*/
 
