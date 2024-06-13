@@ -5,8 +5,6 @@
 
 .page {
 
-  /*
-
   --theme_background-color: #000028;
   --theme_color: #F1B2CE;
   --theme_intro-outro-color: #DB00FF;
@@ -18,8 +16,6 @@
   --theme_camera-effect-color: #FF0070;
 
   --theme_background-image: url("../images/cover-image-dark.png");  
-
-  */
 
   /*margins/gap*/
   --margin: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
