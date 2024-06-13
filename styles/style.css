@@ -8,8 +8,9 @@
   color: var(--theme_color);
 
   background-image: var(--theme_background-image);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. 
   На его основе работает скрипт. */
@@ -165,7 +166,8 @@
 .header__theme-menu-button {
   font-weight: 400;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 18px;  
+  text-transform: lowercase;
   padding: 0 13px;
   block-size: 26px;
   color: var(--theme_decoration-items-color);
