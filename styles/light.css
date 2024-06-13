@@ -23,6 +23,22 @@
 }
 
 @media (prefers-color-scheme: light) {
+  .page {
+    --theme_background-color: #fff1f7;
+    --theme_color: #353430;
+    --theme_intro-outro-color: #FFC2E6;
+    --theme_intro-outro-shadow-color: #FF8DCB;
+    --theme_accents-color: #FF8DCB;
+    --theme_accents-text-color: #353430;
+    --theme_button-hover: rgba(50, 49, 45, 0.4);
+    --theme_decoration-items-color: #353430;
+    --theme_camera-effect-color: transparent;
+  
+    --theme_background-image: url("../images/cover-image-light.png");
+  }
+}
+
+@media (prefers-color-scheme: light) {
   .page.theme_auto {
     --theme_background-color: #fff1f7;
     --theme_color: #353430;
